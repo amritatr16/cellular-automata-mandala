@@ -95,7 +95,7 @@ function draw() {
   for (let k = 0; k < 12 * N; k++) { const a = k * TWO_PI / (12 * N) + rot * 0.5; circle(R * 1.06 * cos(a), R * 1.06 * sin(a), k % 3 === 0 ? 4 : 2); }
   pop();
   blendMode(BLEND); noStroke(); fill(255, 110); textSize(11);
-  text(`${rule ? 'cyclic waves' : "brian's brain"} · ${N}-fold · drag to seed · space pause · R reseed · N symmetry · 1/2 rule · P palette · +/- speed`, 14, height - 22);
+  text(`${rule ? 'cyclic waves' : "cellular automata mandala"} · ${N}-fold · drag to seed · space pause · R reseed · N symmetry · 1/2 rule · P palette · +/- speed`, 14, height - 22);
 }
 
 function poke() {
